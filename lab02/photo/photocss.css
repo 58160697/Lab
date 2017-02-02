@@ -1,0 +1,16 @@
+body{	background-color: rgb(214,205,190);
+			font: 15px 'Microsoft Sans Serif';}
+		article{	width:800px;}
+		table{width: 100%}
+		#m{height: 200px;}
+		#m2{height: 140px;}
+		a:link{color: black;}
+		a:visited{color: black;}
+		a:hover{	color: black; 
+			border-style: dotted;
+			border-radius: 20px;
+			border-color: rgb(52,216,61);
+			background-color: rgb(131,231,136);}
+		iframe{border-radius: 20px;}
+		a{text-decoration: none;}	
+		img{border-radius: 20px;}	

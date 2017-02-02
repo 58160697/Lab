@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Lab02</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="TestCss.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,18 +19,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="lab02.html">Lab02</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
         <li><a href="timetable.html">TimeTable</a></li>
-        <li  class="active"><a href="enroll.html">Enroll</a></li>
+        <li class="active"><a href="#">Enroll</a></li>
         <li><a href="../lab01/aboutme.html">AboutMe</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -38,56 +34,57 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
+    <h1><b>รายวิชาที่ได้ลงทะเบียน</b></h1>      
+    <h2><b>ปีการศึกษา2559/2</b></h2>
   </div>
+    <center><table>
+                <tr bgcolor="#515151">
+                     <td><b class="day">รหัสวิชา</b></td>
+                     <td><b class="day">ชื่อรายวิชา</b></td>
+                     <td><b class="day">หน่วยกิต</b></td>
+                     <td><b class="day">กลุ่ม</b></td>
+                     <td><b class="day">อ.ผู้สอน</b></td>
+                </tr>
+                <tr>
+                    <td class="day1">228102-54</td>
+                    <td>Art of Speaking and Presentation<br>ศิลปะการพูดและการนำเสนอ</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>อาจารย์ ดร.ขจิตา ศรีพุ่ม</td>
+                </tr>
+                <tr>
+                    <td class="day1">228202-54</td>
+                    <td>Academic Article and Research Writing<br>การเขียนบทความวิชาการและงานวิจัย</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>อาจารย์ ดร.ขจิตา ศรีพุ่ม</td>
+                </tr>
+                <tr>
+                    <td class="day1">887230-54</td>
+                    <td>Computer Networks<br>เทคโนโลยีเครือข่ายคอมพิวเตอร์</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>ผู้ช่วยศาสตราจารย์ ดร.ณัฐนนท์ ลีลาตระกูล</td>
+                </tr>
+                <tr>
+                    <td class="day1">887260-54</td>
+                    <td>Human and Computer Interaction<br>ปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>อาจารย์วีระ เกษตรสิน</td>
+                </tr>
+                <tr>
+                    <td class="day1">887371-54</td>
+                    <td>Web Programming<br>การเขียนโปรแกรมบนเว็บ</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>อาจารย์วิทวัส พันธุมจินดา</td>
+                </tr>
+            </table></center>
 </div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>By: <a href="https://www.facebook.com/therachot.boonkoom">Therachot Boonkoom</a></p>
 </footer>
 
 </body>
