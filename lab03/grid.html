@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            margin-bottom: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Lab03</h1>
+            <p>Bootstrap</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="lab03.html">Bootstrap</a></li>
+                    <li class="active"><a href="#">Grid</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <h2>Grid คือ?</h2>
+            <p style="text-indent: 3em; font-size: 18px;line-height: 1.5cm;">Grid มาช่วย และมีการคำนวนค่าหน้าจอพร้อมกับปรับขนาดของ Web ให้แสดงผลกับทุกๆ หน้าจอโดยอัตโนมัติ ซึ่งเราสามารถปรับแต่งให้แต่ละหน้าจอแสดงผลต่างๆ กันได้ ตามขนาดของหน้าจอ</p>
+            <h2>การสร้าง Grid?</h2>
+            <p style="text-indent: 2.5em;font-size: 18px; line-height: 1.5cm;">1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ
+                ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา โดยในที่นี้คือเราจะใช้คลาส container<br> &lt;div class="container"&gt; &nbsp; &nbsp; &nbsp;&lt;/div&gt; &nbsp;
+            </p><br>
+            <p style="text-indent: 2.5em;font-size: 18px; line-height: 1.5cm;">2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container" โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้ class="container"<br> &lt;div class="container"&gt;<br>
+                <p style="text-indent: 2.5em;font-size: 18px;"> &lt;div class="row"&gt;&lt;/div&gt;</p><br>
+                <p style="font-size: 18px;">&lt;/div&gt;</p>
+            </p><br>
+            <p style="text-indent: 2.5em;font-size: 18px; line-height: 1.5cm;">3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system แบ่งออกเป็น 4 ประเภทคือ<br><img src="img/Screen-Shot-2557-04-14-at-11.21.22.png"></p>
+            <font style="size: 10px; text-decoration: underline; font-size: 18px; line-height: 1.5cm;">สรุปจากภาพด้านบนง่ายๆดังนี้</font><br>
+            <font style="size: 10px; font-size: 18px; line-height: 1.5cm;">1. XS :: ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)<br> 2. SM :: ขนาดหน้าจอตั้งแต่ Ipad แนวตั้ง<br> 3. MD :: ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน<br> 4. LG :: หน้าจอที่กว้างกว่า 1200 pixels ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน</font>
+        </div>
+    </div><br>
+</body>
+
+</html>
