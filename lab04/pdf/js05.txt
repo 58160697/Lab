@@ -1,0 +1,15 @@
+﻿5. ประกาศ function ชื่อ alertUser() 
+6. คำสั่ง alert เก็บข้อความ "An alert box contains an exclamation mark"
+8. ประกาศ function ชื่อ confirmUser()
+9. ประกาศตัวแปร msg เก็บข้อความ "please confirm that you want" และ "to test another button"
+11. ตวรจสอบการกดปุ่มต่อตัวแปร msg ด้วยคำสั่ง confirm
+12. กดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "You selected OK"
+14. กดปุ่ม Cancel จะขึ้นหน้าใหม่แสดงข้อความ "You selected Cancel"
+16. ประกาศ function ชื่อ promptUser()
+17. ประกาศตัวแปร name1 เก็บฟังก์ชั่น prompt เก็บข้อความ "What is your name?" และ " " (ค่า String ว่าง)
+18. คำสั่ง document.write พิมพ์ข้อความ "welcome to this page" ใน <h2> และต่อด้วยตัวแปร name1
+25. สร้างปุ่ม ชื่อ Click here to test alert() และเมื่อกดปุ่ม Click here to test alert() จะเรียกฟังก์ชั่น alertUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "An alert box contains an exclamation mark"
+26. สร้างปุ่ม ชื่อ Click here to test confirm() และเมื่อกดปุ่ม Click here to test confirm() จะเรียกฟังก์ชั่น confirmUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "please confirm that you want" และ "to test another button?" 
+	ถ้ากดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "You selected OK"
+	ถ้ากดปุ่ม Cancel จะขึ้นหน้าใหม่แสดงข้อความ "You selected Cancel"
+28. สร้างปุ่ม ชื่อ Click here to test prompt() และเมื่อกดปุ่ม Click here to test prompt() จะเรียกฟังก์ชั่น promptUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "What is your name?" และให้ใส่ชื่อลงไปช่องว่าง ถ้ากดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "welcome to this page" ตามด้วยชื่อที่ใส่

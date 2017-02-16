@@ -1,0 +1,4 @@
+﻿7. คำสั่งแสดงผล document.write ขึ้นบรรทัด และข้อความ "This browser is" และ "Netscape" (ชื่อ Browser)
+8. คำสั่งแสดงผล document.write ขึ้นบรรทัด และข้อความ "Version" และเรียกคำสั่ง navigator.appVersion (version ของ netscape)
+9. ตรวจสอบ parseFloat (การแปลงค่า string หรือตัวแปรให้เป็น Number) ว่า navigator.appVersion มีค่ามากกว่าหรือเท่ากับ 4 หรือไม่
+10. ถ้าเป็นจริง ขึ้นบรรทัดใหม่ และพิมพ์ข้อความ "You have an up-to-date browser"

@@ -1,0 +1,7 @@
+﻿5. ประกาศ function ชื่อ highlightdocs
+6. ตรวจสอบเงื่อนไข document.images 
+7. ถ้าเป็นจริง document.images["docs"].src = docsOn.src; จะทำงาน
+10. ประกาศ function ชื่อ unhighlightdocs
+11. ถ้าเป็นจริง document.images["docs"].src = docsOff.src;จะทำงาน
+15. ตรวจสอบเงื่อนไข document.images
+16. ถ้าเป็นจริง บรรทัดที่ 16-19 จะทำงาน

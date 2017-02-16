@@ -1,0 +1,6 @@
+﻿6. ประกาศ function ชื่อ doMoveBrowser() รับค่า form
+7. ให้ parent เก็บค่าที่ตั้งของลิงค์ แล้วเก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()
+9. ประกาศ function ชื่อ getSelectedValue()
+10. ส่งค่า document ชื่อ form1 ประเภท list (รายการ) ที่คำสั่ง selectedIndex กลับ 
+12. ประกาศ function ชื่อ showURL() รับค่า form
+13. สร้าง form ประเภท TextBox (กล่องข้อความ) ให้เก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()

@@ -1,0 +1,11 @@
+﻿7. ประกาศ function ชื่อ windowHeight()
+8. ตรวจสอบเงื่อนไข document.body && document.body.clientHeight
+9. ถ้าเป็นจริง  ส่งค่า document.body.clientHeight;
+10. ถ้าไม่เป็นจริง ตรวจสอบเงื่อนไข window.innerHeight
+11. ถ้าเป็นจริง ส่งค่า window.innerHeight;
+13. ถ้าไม่เป็นจริง 
+14. ส่งค่า 0
+16. ตรวจสอบเงื่อนไข windowHeight() >= 300
+17. ถ้าเป็นจริง ไปที่เว็บ http://angsila.cs.buu.ac.th/~58160697/887371/lab01/aboutme.html
+18. ถ้าไม่เป็นจริง 
+19. ไปที่เว็บ "http://angsila.cs.buu.ac.th/~58160697/887371/lab01/aboutme.html";
