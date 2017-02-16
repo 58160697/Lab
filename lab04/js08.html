@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title> Image rollover </title>
+    <SCRIPT LANGUAGE="JavaScript">
+        function highlightdocs() {
+            if (document.images) {
+                document.images["docs"].src = docsOn.src;
+            }
+        }
+
+        function unhighlightdocs() {
+            if (document.images) {
+                document.images["docs"].src = docsOff.src;
+            }
+        }
+        if (document.images) {
+            docsOn = new Image();
+            docsOn.src = "img/68_ggpw.png";
+            docsOff = new Image();
+            docsOff.src = "img/68_ggpw_1.png";
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <p>
+        <A href="img/68_ggpw_1.png" onMouseOver="highlightdocs () " unonMouseOut="unhighlightdocs () ">
+            <img src="img/68_ggpw_1.png" name=docs height=25 width=25 border=0>
+        </A>
+    </p>
+
+</body>
+
+</html>
