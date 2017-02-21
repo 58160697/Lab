@@ -1,0 +1,15 @@
+﻿1. 58160697, 2017-02-21 13:22:12
+เริ่มบรรทัดที่ 32
+32 : สร้างปุ่ม Change Content เมื่อมีการคลิก ไปทำฟังก์ชัน loadXMLDoc
+4 : ฟังก์ชัน loadXMLDoc
+5 : สร้างตัวแปร xmlhttp
+6 : ตรวจสอบเงื่อนไขถ้า window.XMLHttpRequest(ตรวจสอบถ้าเป็น IE7+,firefox,Chome,Opera,Safari) เป็นจริง
+8 : คำสั้ง xmlhttp=new XMLHttpRequest(); ทำงาน
+9 : ถ้าเป็นเท็จ 
+11 : คำสั่ง xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); (code for IE6 , IE5) ทำงาน
+14 : คำสั่ง xmlhttp.onreadystatechange ฟังชั่นก์นี้จะทำงานเมื่อ xmlhttp ทำงาน
+15 : แสดง pop up จากคำสั่ง alert 
+16 : ตรวจสอบเงื่อนไขถ้า xmlhttp.readyState==4 && xmlhttp.status==200 เป็นจริง
+17 : document.getElementById("myDiv").innerHTML = xmlhttp.responseText; ทำงาน
+20 : xmlhttp เรียกใช้เมธอด open ส่งพารามิเตอร์ "GET","hello.txt",true
+21 : xmlhttp เรียกใช้เมธอด send คำสั่งทำให้เกิดการเปลี่ยน state 
