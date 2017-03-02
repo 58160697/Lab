@@ -1,32 +1,38 @@
 <html>
+
 <head>
-<script>
-function loadjson(){
-	var xmlhttp;
-	xmlhttp = new XMLHttpRequest;
-	xmlhttp.onreadystatechange = function(){
-		if (xmlhttp.readyState == 4 &&  xmlhttp.status == 200){
-			var html = "";
-			var obj = JSON.parse(xmlhttp.responseText);
-			//alert(obj.books.length);
-			for (i = 0; i < obj.books.length; i++){
-				html += obj.books[i].book.title + "<br>";
-				html += "<img src='" + obj.books[i].book.cover + "' height='100'><hr>";	
-			}
-			document.getElementById("mydiv").innerHTML = html;
-		}
-	}
-	xmlhttp.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_json.php", true);
-	xmlhttp.send();
-}
-</script>
+    <script>
+        function loadjson() {
+            var xmlhttp;
+            xmlhttp = new XMLHttpRequest;
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var html = "";
+                    var obj = JSON.parse(xmlhttp.responseText);
+                    for (i = 0; i < obj.books.length; i++) {
+                        html += "<h3>" + obj.books[i].book.title + "</h3>";
+                        html += "by " + obj.books[i].book.author + ", " + obj.books[i].book.publisher + "<br>";
+                        html += "<img src='" + obj.books[i].book.cover + "' height='100'><br>";
+                        html += obj.books[i].book.blurb + "<hr>";
+                    }
+                    document.getElementById("mydiv").innerHTML = html;
+                }
+            }
+            xmlhttp.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_json.php", true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
+
 <body>
-<div id="mydiv">
-	Let AJAX change this text
-</div>
-<button type="button" onclick="loadjson()">
-	change content
+    <div id="mydiv">
+        <h2>
+            JSON
+        </h2>
+    </div>
+    <button type="button" onclick="loadjson()">
+	Click me!
 </button>
 </body>
+
 </html>

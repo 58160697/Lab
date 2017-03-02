@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script>
+        function loadXML() {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function() {
+                //alert(xmlhttp.readyState + " : " + xmlhttp.status);
+                var i;
+                var html = "";
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var obj = xmlhttp.responseXML.documentElement.getElementsByTagName("book");
+                    for (i = 0; i < obj.length; i++) {
+                        html += "<h3>" + obj[i].getElementsByTagName("title")[0].firstChild.nodeValue + "</h3>";
+                        html += obj[i].getElementsByTagName("publisher")[0].firstChild.nodeValue + ", ";
+                        html += obj[i].getElementsByTagName("author")[0].firstChild.nodeValue + "<br><br>";
+                        html += "<img src='" + obj[i].getElementsByTagName("cover")[0].getAttribute("src") + " 'height='256'> <br><br>";
+                        html += obj[i].getElementsByTagName("blurb")[0].firstChild.nodeValue + "<br>";
+                    }
+                    document.getElementById("myDiv").innerHTML = html;
+                }
+            }
+            xmlhttp.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_xml.php", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        <h2>
+            XML
+        </h2>
+    </div>
+    <button type="button" onclick="loadXML()">
+    Click me!
+</button>
+</body>
+
+</html>
