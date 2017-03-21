@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -45,11 +45,10 @@
         <br><br>
         <input type="submit" id="submit" value="Submit" name="submit" />
         </form>
-        <br><br>
-        <a href="er.png"><button>ER Diagram</button></a>
-        <a href="register_form.txt"><button>register_form</button></a>
-        <a href="dopost.txt"><button>dopost</button></a>
-        <a href="show_register.txt"><button>show_register</button></a>
+        <a href="er.png"><button>ER Diagram<button></a>
+        <a href=""><button>ER Diagram<button></a>
+        <a href=""><button>ER Diagram<button></a>
+        <a href=""><button>ER Diagram<button></a>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
             $('#submit').on('click' , function(even) {
