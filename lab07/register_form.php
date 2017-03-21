@@ -25,8 +25,22 @@
         จังหวัด: <br/>
         <select name="province" id="province">
             <option value="">---เลืกจังหวัด---</option>
-            <option value="1">กรุงเทพมหานคร</option>
-            <option value="2">ชลบุรี</option>
+        <?php
+                    $hostname = "localhost";
+                    $user = "it58160697";
+                    $password = "it58160697";
+                    $dbname = "it58160697";
+                    $connect = mysql_connect($hostname,$user,$password) or die("cannot connect");
+                    mysql_query( "SET NAMES UTF8" );
+                    $db = mysql_select_db($dbname)or die("cannot connect database!");
+                    $sql = "SELECT * FROM provinces";
+                    $dbquery = mysql_db_query($dbname,$sql);
+                    $row = mysql_num_rows($dbquery);
+                    while($result = mysql_fetch_array($dbquery)) {?>
+                        <option value="<?php echo $result['PROVINCE_ID']; ?>"><?php echo $result['PROVINCE_NAME']; ?></option>
+                    <?php } 
+        mysql_close($connect);            
+        ?>
         </select><br/>
         <br><br>
         <input type="submit" id="submit" value="Submit" name="submit" />
